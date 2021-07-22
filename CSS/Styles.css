@@ -9,7 +9,7 @@
 }
 
 body {
-  background: linear-gradient(0deg, #00bfff, #0a0a2a);
+  background: linear-gradient(45deg, #00bfff, #0b0b61);
   background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
@@ -19,4 +19,119 @@ body {
 
 .container {
   background: white;
+  max-width: 350px;
+  min-height: 40vh;
+  padding: 2rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+main h2 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+main h2::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 25px;
+  bottom: 3px;
+  background: linear-gradient(45deg, #00bfff, #0a0a2a);
+  left: 0;
+  border-radius: 8px;
+}
+
+.input-field {
+  position: relative;
+}
+
+.input-field input {
+  outline: none;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.input-field input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.input-field:first-child {
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type="button"] {
+  margin-top: 2rem;
+  padding: 0.4rem;
+  background: linear-gradient(to left, #0a0a2a, #08298a);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+
+form input[type="button"]:hover {
+  background: linear-gradient(to right, #0a0a2a, #08298a);
+  letter-spacing: 0.5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.footer span {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.footer .social_media {
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.footer .social_media a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.footer .social_media a i {
+  margin: 0 0.5rem;
+  width: 15px;
+}
+
+.footer .social_media_twitter {
+  background: linear-gradient(to right, #56a7f2, #468aca);
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  transition: 0.3s;
+}
+
+.footer .social_media_facebook {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  border-radius: 4px;
+  margin-top: 0.8rem;
+  transition: 0.3s;
+}
+
+.footer .social_media_twitter:hover {
+  letter-spacing: 0.1px;
+  transition: 0.3s;
+}
+
+.footer .social_media_facebook:hover {
+  letter-spacing: 0.1px;
+  transition: 0.3s;
 }
